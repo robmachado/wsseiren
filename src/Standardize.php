@@ -72,7 +72,7 @@ class Standardize
         $resp = [];
         foreach ($std->SaldoArtigoCor as $item) {
             $resp[] = (object) [
-                'codigo' => $item->Codigo,
+                'codigo' => $item->Artigo,
                 'local' => $item->Divisao,
                 'cor' => $item->Cor,
                 'pecas' => $item->Pecas,
