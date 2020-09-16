@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="seirentextil.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="seirentextil.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="seirentextil.com.br">
+      <s:element name="WsArtigo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsArtigoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="xml" nillable="true" type="tns:xml" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="xml">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="lotes" type="tns:ArrayOfLote" />
+          <s:element minOccurs="0" maxOccurs="1" name="romaneios" type="tns:ArrayOfRomaneio" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pecas" type="tns:ArrayOfPeca" />
+          <s:element minOccurs="0" maxOccurs="1" name="cores" type="tns:ArrayOfSaldoArtigoCor" />
+          <s:element minOccurs="0" maxOccurs="1" name="retornos" type="tns:ArrayOfRetorno" />
+          <s:element minOccurs="0" maxOccurs="1" name="locals" type="tns:ArrayOfLocal" />
+          <s:element minOccurs="0" maxOccurs="1" name="erros" type="tns:ArrayOfErro" />
+          <s:element minOccurs="0" maxOccurs="1" name="lote_Sucessos" type="tns:ArrayOfLote_Sucesso" />
+          <s:element minOccurs="0" maxOccurs="1" name="cors" type="tns:ArrayOfCor" />
+          <s:element minOccurs="0" maxOccurs="1" name="artigos" type="tns:ArrayOfArtigo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLote">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Lote" nillable="true" type="tns:Lote" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Lote">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Nota_Fiscal" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DT_Emissao" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OP_Tipo_Lote" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Cnpj_Faccionista" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Romaneios" type="tns:Romaneio" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Romaneio">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Romaneio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DC_Artigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DC_Cor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OP_Tipo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Cod_Produto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NR_Largura" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NR_Gramatura" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DC_Obs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Pecas" type="tns:Peca" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Peca">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Peca" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NR_Peso" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NR_Comprimento" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="DC_Maquina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DC_Maquina_Lote" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRomaneio">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Romaneio" nillable="true" type="tns:Romaneio" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPeca">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Peca" nillable="true" type="tns:Peca" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSaldoArtigoCor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SaldoArtigoCor" nillable="true" type="tns:SaldoArtigoCor" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SaldoArtigoCor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Artigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Divisao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pecas" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Peso" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRetorno">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Retorno" nillable="true" type="tns:Retorno" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Retorno">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Lote" type="tns:Lote_Sucesso" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Local" type="tns:Local" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Erro" type="tns:Erro" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Lote_Sucesso">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID_Lote" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Nota_Fiscal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Cnpj_Faccionista" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Local">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NR_Nota_Fiscal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Local_Tag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Local_Valor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Erro">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Erro_Tag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Erro_Valor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLocal">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Local" nillable="true" type="tns:Local" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfErro">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Erro" nillable="true" type="tns:Erro" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLote_Sucesso">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Lote_Sucesso" nillable="true" type="tns:Lote_Sucesso" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cor" nillable="true" type="tns:Cor" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DC_Cor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfArtigo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Artigo" nillable="true" type="tns:Artigo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Artigo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DC_Artigo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NR_Largura" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NR_Gramatura" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="WsCor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsCorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="xml" nillable="true" type="tns:xml" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsConsultaSaldo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsConsultaSaldoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="xml" nillable="true" type="tns:xml" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsCadastraLote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="arquivoByte" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsCadastraLoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="xml" nillable="true" type="tns:xml" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WsArtigoSoapIn">
+    <wsdl:part name="parameters" element="tns:WsArtigo" />
+  </wsdl:message>
+  <wsdl:message name="WsArtigoSoapOut">
+    <wsdl:part name="parameters" element="tns:WsArtigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsArtigoAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="WsCorSoapIn">
+    <wsdl:part name="parameters" element="tns:WsCor" />
+  </wsdl:message>
+  <wsdl:message name="WsCorSoapOut">
+    <wsdl:part name="parameters" element="tns:WsCorResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsCorAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="WsConsultaSaldoSoapIn">
+    <wsdl:part name="parameters" element="tns:WsConsultaSaldo" />
+  </wsdl:message>
+  <wsdl:message name="WsConsultaSaldoSoapOut">
+    <wsdl:part name="parameters" element="tns:WsConsultaSaldoResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsConsultaSaldoAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="WsCadastraLoteSoapIn">
+    <wsdl:part name="parameters" element="tns:WsCadastraLote" />
+  </wsdl:message>
+  <wsdl:message name="WsCadastraLoteSoapOut">
+    <wsdl:part name="parameters" element="tns:WsCadastraLoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsCadastraLoteAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="wsRomaneioSoap">
+    <wsdl:operation name="WsArtigo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download em formato XML dos artigos cadastrados na Seiren</wsdl:documentation>
+      <wsdl:input message="tns:WsArtigoSoapIn" />
+      <wsdl:output message="tns:WsArtigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsCor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download em formato XML das cores cadastradas na Seiren</wsdl:documentation>
+      <wsdl:input message="tns:WsCorSoapIn" />
+      <wsdl:output message="tns:WsCorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsConsultaSaldo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna uma lista com o saldo de artigos e cores</wsdl:documentation>
+      <wsdl:input message="tns:WsConsultaSaldoSoapIn" />
+      <wsdl:output message="tns:WsConsultaSaldoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsCadastraLote">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que possibilita a transmissão das informações referentes ao cadastro de um lote com romaneios e peças em formato XML</wsdl:documentation>
+      <wsdl:input message="tns:WsCadastraLoteSoapIn" />
+      <wsdl:output message="tns:WsCadastraLoteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsRomaneioSoap" type="tns:wsRomaneioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WsArtigo">
+      <soap:operation soapAction="seirentextil.com.br/WsArtigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:WsArtigoAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsCor">
+      <soap:operation soapAction="seirentextil.com.br/WsCor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:WsCorAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsConsultaSaldo">
+      <soap:operation soapAction="seirentextil.com.br/WsConsultaSaldo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:WsConsultaSaldoAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsCadastraLote">
+      <soap:operation soapAction="seirentextil.com.br/WsCadastraLote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:WsCadastraLoteAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsRomaneioSoap12" type="tns:wsRomaneioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WsArtigo">
+      <soap12:operation soapAction="seirentextil.com.br/WsArtigo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:WsArtigoAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsCor">
+      <soap12:operation soapAction="seirentextil.com.br/WsCor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:WsCorAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsConsultaSaldo">
+      <soap12:operation soapAction="seirentextil.com.br/WsConsultaSaldo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:WsConsultaSaldoAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsCadastraLote">
+      <soap12:operation soapAction="seirentextil.com.br/WsCadastraLote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:WsCadastraLoteAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsRomaneio">
+    <wsdl:port name="wsRomaneioSoap" binding="tns:wsRomaneioSoap">
+      <soap:address location="http://romaneio.seirentextil.com.br/homol/wsseirenHomol/wsRomaneio.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsRomaneioSoap12" binding="tns:wsRomaneioSoap12">
+      <soap12:address location="http://romaneio.seirentextil.com.br/homol/wsseirenHomol/wsRomaneio.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
