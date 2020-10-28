@@ -9,6 +9,7 @@ class Tools
     protected $config;
     protected $soap;
     protected $ns = 'seirentextil.com.br';
+    public $lastRequest;
     
 
     public function __construct(\stdClass $config)
@@ -32,6 +33,7 @@ class Tools
         $msg = "<{$operation} xmlns=\"{$this->ns}\">"
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "</{$operation}>";
+        $this->lastRequest = $msg;            
         return $this->soap->send($msg, $operation);
     }
     
@@ -46,6 +48,7 @@ class Tools
         $msg = "<{$operation} xmlns=\"{$this->ns}\">"
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "</{$operation}>";
+        $this->lastRequest = $msg;            
         return $this->soap->send($msg, $operation);    
     }
     
@@ -60,6 +63,7 @@ class Tools
         $msg = "<{$operation} xmlns=\"{$this->ns}\">"
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "</{$operation}>";
+        $this->lastRequest = $msg;            
         return $this->soap->send($msg, $operation);              
         
     }
@@ -78,8 +82,7 @@ class Tools
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "<arquivoByte>{$b64}</arquivoByte>"
             . "</{$operation}>";
-            
-        //return $msg;
+        $this->lastRequest = $msg;    
         return $this->soap->send($msg, $operation);
     }
 }
