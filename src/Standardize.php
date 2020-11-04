@@ -85,22 +85,37 @@ class Standardize
     protected function translateRetornos($std)
     {
         $resp = [];
-        $code = $std->Retorno->Codigo ?? 'Sem codigo';
-        if ($code > 999) {
-            //houve algum erro
-            $resp[] = (object) [
-               'erro' => $code,
-               'desc' => $this->errors[$code],
-            ];
+        if (is_array($std->Retorno)) {
+            foreach ($std->Retorno as $ret) {
+                $code = $ret->Codigo;
+                if ($code > 999) {
+                    //houve algum erro
+                    $resp[] = (object) [
+                        'erro' => $code,
+                        'desc' => $this->errors[$code],
+                    ];
+                }
+            }
         } else {
-            $resp[] = (object) [
-               'lote' => $std->Retorno->Lote->ID_Lote,
-               'nf' =>  $std->Retorno->Lote->NR_Nota_Fiscal,
-               'desc' => 'Sucesso lote registrado',
-            ];   
+            $code = $std->Retorno->Codigo;
+            if ($code > 999) {
+                //houve algum erro
+                $resp[] = (object) [
+                    'erro' => $code,
+                    'desc' => $this->errors[$code],
+                ];
+            } else {
+                $resp[] = (object) [
+                    'lote' => $std->Retorno->Lote->ID_Lote,
+                    'nf' =>  $std->Retorno->Lote->NR_Nota_Fiscal,
+                    'desc' => 'Sucesso lote registrado',
+                ];   
+            }
         }    
         return $resp;
     }
+    
+    
 
     public function whichIs($xml)
     {
