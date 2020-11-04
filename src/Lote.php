@@ -25,9 +25,8 @@ class Lote
             $lot->appendChild($this->dom->createElement('NR_Nota_Fiscal', $lote->numero));
             $lot->appendChild($this->dom->createElement('DT_Emissao', $lote->emissao));
             $lot->appendChild($this->dom->createElement('OP_Tipo_Lote', $lote->tipo));
-            $lot->appendChild($this->dom->createElement('NR_Cnpj_Faccionista', $lote->faccionista));
+            $lot->appendChild($this->dom->createElement('NR_Cnpj_Faccionista', $lote->faccionista ?? ''));
             
-            $roms = $this->dom->createElement('Romaneios');
             foreach($lote->romaneio as $r) {
                 $rom = $this->dom->createElement('Romaneio');
                 $rom->appendChild($this->dom->createElement('NR_Romaneio', $r->numero));
@@ -35,28 +34,25 @@ class Lote
                 $rom->appendChild($this->dom->createElement('DC_Cor', $r->cor));
                 $rom->appendChild($this->dom->createElement('OP_Tipo', $r->tipo));
                 $rom->appendChild($this->dom->createElement('NR_Cod_Produto', $r->codigo));
-                $rom->appendChild($this->dom->createElement('NR_Largura', $r->largura));
-                $rom->appendChild($this->dom->createElement('NR_Gramatura', $r->gramatura));
+                $rom->appendChild($this->dom->createElement('NR_Largura', number_format($r->largura, 2, ',', '')));
+                $rom->appendChild($this->dom->createElement('NR_Gramatura', round($r->gramatura,0)));
                 $rom->appendChild($this->dom->createElement('DC_Obs', $r->obs));
                 $pcs = $this->dom->createElement('Romaneio');
                 foreach($r->peca as $p) {
                     $pc = $this->dom->createElement('Peca');
                     $pc->appendChild($this->dom->createElement('NR_Peca', $p->numero));
-                    $pc->appendChild($this->dom->createElement('NR_Peso', $p->peso));
-                    $pc->appendChild($this->dom->createElement('NR_Comprimento', $p->comprimento));
+                    $pc->appendChild($this->dom->createElement('NR_Peso', number_format($p->peso, 2, ',', '')));
+                    $pc->appendChild($this->dom->createElement('NR_Comprimento', round($p->comprimento, 0)));
                     $pc->appendChild($this->dom->createElement('DC_Maquina', $p->maquina));
                     $pc->appendChild($this->dom->createElement('DC_Maquina_Lote', $p->lote));
                     $pcs->appendChild($pc);
                 }
                 $rom->appendChild($pcs);
-                $roms->appendChild($rom);
+                $lot->appendChild($rom);
             }
-            $lot->appendChild($roms);
             $this->node->appendChild($lot);
         }
         $this->dom->appendChild($this->node);
         return $this->dom->saveXML();
     }
-    
-    
 }
