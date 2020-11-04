@@ -85,11 +85,11 @@ class Standardize
     protected function translateRetornos($std)
     {
         $resp = [];
-        $code = $std->Retorno->Codigo;
+        $code = $std->Retorno->Codigo ?? 'Sem codigo';
         if ($code > 999) {
             //houve algum erro
             $resp[] = (object) [
-                'erro' => $code,
+               'erro' => $code,
                'desc' => $this->errors[$code],
             ];
         } else {
