@@ -26,7 +26,6 @@ class Lote
             $lot->appendChild($this->dom->createElement('DT_Emissao', $lote->emissao));
             $lot->appendChild($this->dom->createElement('OP_Tipo_Lote', $lote->tipo));
             $lot->appendChild($this->dom->createElement('NR_Cnpj_Faccionista', $lote->faccionista ?? ''));
-            
             foreach($lote->romaneio as $r) {
                 $rom = $this->dom->createElement('Romaneio');
                 $rom->appendChild($this->dom->createElement('NR_Romaneio', $r->numero));
@@ -37,7 +36,6 @@ class Lote
                 $rom->appendChild($this->dom->createElement('NR_Largura', number_format($r->largura, 2, ',', '')));
                 $rom->appendChild($this->dom->createElement('NR_Gramatura', round($r->gramatura,0)));
                 $rom->appendChild($this->dom->createElement('DC_Obs', $r->obs));
-                $pcs = $this->dom->createElement('Romaneio');
                 foreach($r->peca as $p) {
                     $pc = $this->dom->createElement('Peca');
                     $pc->appendChild($this->dom->createElement('NR_Peca', $p->numero));
@@ -45,14 +43,15 @@ class Lote
                     $pc->appendChild($this->dom->createElement('NR_Comprimento', round($p->comprimento, 0)));
                     $pc->appendChild($this->dom->createElement('DC_Maquina', $p->maquina));
                     $pc->appendChild($this->dom->createElement('DC_Maquina_Lote', $p->lote));
-                    $pcs->appendChild($pc);
+                    $rom->appendChild($pc);
                 }
-                $rom->appendChild($pcs);
                 $lot->appendChild($rom);
             }
             $this->node->appendChild($lot);
         }
         $this->dom->appendChild($this->node);
-        return $this->dom->saveXML();
+        $xml = $this->dom->saveXML($this->dom->documentElement);
+        $xml = str_replace('<NR_Cnpj_Faccionista/>', '<NR_Cnpj_Faccionista></NR_Cnpj_Faccionista>', $xml);
+        return $xml;
     }
 }
