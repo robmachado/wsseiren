@@ -8,7 +8,7 @@ class Soap
     protected $url;
     protected $token;
     protected $ns = 'seirentextil.com.br';
-    protected $soaptimeout = 30;
+    protected $soaptimeout = 10;
     protected $soapprotocol = 0;
     protected $soaperror;
     protected $soapinfo;
