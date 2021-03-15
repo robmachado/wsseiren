@@ -43,13 +43,19 @@ class Lote
                     $pc->appendChild($this->dom->createElement('NR_Comprimento', round($p->comprimento, 0)));
                     $pc->appendChild($this->dom->createElement('DC_Maquina', $p->maquina));
                     $pc->appendChild($this->dom->createElement('DC_Maquina_Lote', $p->lote));
-                    $pc->appendChild($this->dom->createElement('DC_Titulagem', $p->titulo ?? ''));
+                    if (isset($p->titulo)) {
+                        $pc->appendChild($this->dom->createElement('DC_Titulagem', $p->titulo ?? ''));
+                    }    
                     $rom->appendChild($pc);
                 }
                 $lot->appendChild($rom);
             }
-            $lot->appendChild($this->dom->createElement('ID_STATUS', '0'));
-            $lot->appendChild($this->dom->createElement('Chave_XML', $lote->chave ?? ''));
+            if (isset($lote->status)) {
+                $lot->appendChild($this->dom->createElement('ID_STATUS', $lote->status));
+            }
+            if (isset($lote->chave)) {
+                $lot->appendChild($this->dom->createElement('Chave_XML', $lote->chave ?? ''));
+            }    
             $this->node->appendChild($lot);
         }
         $this->dom->appendChild($this->node);
