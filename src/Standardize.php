@@ -4,18 +4,39 @@ namespace Fimatec\Seiren;
 
 class Standardize
 {
+    /**
+     * @var string[]
+     */
     protected $rootTagList = [
         'artigos',
         'cors',
         'cores',
         'retornos'
     ];
+    /**
+     * @var string
+     */
     protected $json;
+    /**
+     * @var string
+     */
     protected $node;
+    /**
+     * @var \stdClass
+     */
     protected $std;
+    /**
+     * @var string
+     */
     protected $key;
+    /**
+     * @var array
+     */
     protected $errors;
-    
+
+    /**
+     * Construtor
+     */
     public function __construct()
     {
         $this->errors = json_decode(
@@ -24,6 +45,12 @@ class Standardize
         );
     }
 
+    /**
+     * Convert XML para stdClass
+     *
+     * @param $xml
+     * @return null
+     */
     public function toStd($xml = null)
     {
         $xml = str_replace(' xmlns="seirentextil.com.br"', '', $xml);
@@ -38,11 +65,16 @@ class Standardize
             json_encode($sxml, JSON_PRETTY_PRINT)
         );
         $std = json_decode($this->json);
-        //return $std;
         $func = 'translate' . ucfirst($this->key);
         return $this->$func($std);
     }
-    
+
+    /**
+     * Retorna os artigos em objeto
+     *
+     * @param \stdClass $std
+     * @return array
+     */
     protected function translateArtigos(\stdClass $std)
     {
         $resp = [];
@@ -55,7 +87,12 @@ class Standardize
         }
         return $resp;
     }
-    
+
+    /**
+     * Retorna as cor em objeto
+     * @param $std
+     * @return array
+     */
     protected function translateCors($std)
     {
         $resp = [];
@@ -66,7 +103,13 @@ class Standardize
         }
         return $resp;
     }
-    
+
+    /**
+     * Retorna as cores em objetos
+     *
+     * @param $std
+     * @return array
+     */
     protected function translateCores($std)
     {
         $resp = [];
@@ -81,7 +124,12 @@ class Standardize
         }
         return $resp;
     }
-    
+
+    /**
+     * Converte os retornos em objetos pre definidos
+     * @param $std
+     * @return array
+     */
     protected function translateRetornos($std)
     {
         $resp = [];
@@ -109,14 +157,18 @@ class Standardize
                     'lote' => $std->Retorno->Lote->ID_Lote,
                     'nf' =>  $std->Retorno->Lote->NR_Nota_Fiscal,
                     'desc' => 'Sucesso lote registrado',
-                ];   
+                ];
             }
-        }    
+        }
         return $resp;
     }
-    
-    
 
+    /**
+     * Veriica o tipo do xml
+     *
+     * @param $xml
+     * @return string
+     */
     public function whichIs($xml)
     {
         if (!$this->isXML($xml)) {
@@ -142,8 +194,15 @@ class Standardize
             "Este xml não pertence ao wsSeirem."
         );
     }
-    
-    public function isXML($content) {
+
+    /**
+     * Verifica se o conteudo é um xml formatado corretamente
+     *
+     * @param $content
+     * @return bool
+     */
+    public function isXML($content)
+    {
         $content = trim($content);
         if (empty($content)) {
             return false;
@@ -156,8 +215,8 @@ class Standardize
         libxml_use_internal_errors(true);
         libxml_clear_errors();
         simplexml_load_string($content);
-        $errors = libxml_get_errors();
+        $this->errors = libxml_get_errors();
         libxml_clear_errors();
-        return empty($errors);
+        return empty($this->errors);
     }
 }

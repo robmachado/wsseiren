@@ -9,8 +9,9 @@
         }
     ],
     "require": {
-        "php" : ">= 7.1",
+        "php" : ">= 7.4",
         "ext-dom": "*",
+        "ext-curl": "*",
         "ext-openssl": "*",
         "ext-json": "*",
         "ext-simplexml": "*",
@@ -44,5 +45,10 @@
             "v1.0": "1.0-dev"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }

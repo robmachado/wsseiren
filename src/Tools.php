@@ -10,8 +10,11 @@ class Tools
     protected $soap;
     protected $ns = 'seirentextil.com.br';
     public $lastRequest;
-    
 
+    /**
+     * Construtor
+     * @param \stdClass $config
+     */
     public function __construct(\stdClass $config)
     {
         $this->config = $config;
@@ -24,7 +27,7 @@ class Tools
     
     /**
      * Busca cores cadastradas na Seiren
-     * 
+     *
      * @return string
      */
     public function cores()
@@ -33,13 +36,13 @@ class Tools
         $msg = "<{$operation} xmlns=\"{$this->ns}\">"
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "</{$operation}>";
-        $this->lastRequest = $msg;            
+        $this->lastRequest = $msg;
         return $this->soap->send($msg, $operation);
     }
     
     /**
      * Busca artigos cadastrados na Seiren
-     * 
+     *
      * @return string
      */
     public function artigos()
@@ -48,13 +51,13 @@ class Tools
         $msg = "<{$operation} xmlns=\"{$this->ns}\">"
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "</{$operation}>";
-        $this->lastRequest = $msg;            
-        return $this->soap->send($msg, $operation);    
+        $this->lastRequest = $msg;
+        return $this->soap->send($msg, $operation);
     }
     
     /**
      * Consulta os saldos
-     * 
+     *
      * @return string
      */
     public function saldos()
@@ -63,14 +66,13 @@ class Tools
         $msg = "<{$operation} xmlns=\"{$this->ns}\">"
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "</{$operation}>";
-        $this->lastRequest = $msg;            
-        return $this->soap->send($msg, $operation);              
-        
+        $this->lastRequest = $msg;
+        return $this->soap->send($msg, $operation);
     }
     
     /**
      * Envia romaneio para o webservice
-     * 
+     *
      * @param \stdClass $std
      * @return string
      */
@@ -82,7 +84,7 @@ class Tools
             . "<CNPJ>{$this->config->cnpj}</CNPJ>"
             . "<arquivoByte>{$b64}</arquivoByte>"
             . "</{$operation}>";
-        $this->lastRequest = $msg;    
+        $this->lastRequest = $msg;
         return $this->soap->send($msg, $operation);
     }
 }

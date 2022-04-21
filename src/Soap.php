@@ -4,22 +4,54 @@ namespace Fimatec\Seiren;
 
 class Soap
 {
-    
+    /**
+     * @var string
+     */
     protected $url;
+    /**
+     * @var string
+     */
     protected $token;
+    /**
+     * @var string
+     */
     protected $ns = 'seirentextil.com.br';
+    /**
+     * @var int
+     */
     protected $soaptimeout = 10;
+    /**
+     * @var int
+     */
     protected $soapprotocol = 0;
+    /**
+     * @var string
+     */
     protected $soaperror;
+    /**
+     * @var array
+     */
     protected $soapinfo;
-    protected $debugmode = false;
-    
+
+    /**
+     * Construtor
+     *
+     * @param string $token
+     * @param string $url
+     */
     public function __construct($token, $url)
     {
         $this->token = $token;
         $this->url = $url;
     }
-    
+
+    /**
+     * Envia a mensagem a api da SEIREN
+     * @param string $msg
+     * @param string $operation
+     * @return string
+     * @throws \Exception
+     */
     public function send($msg, $operation)
     {
         $action = "{$this->ns}/{$operation}";
@@ -83,6 +115,7 @@ class Soap
 
     /**
      * Extract faultstring form response if exists
+     *
      * @param string $body
      * @return string
      */
