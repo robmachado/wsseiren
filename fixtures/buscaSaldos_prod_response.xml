@@ -1,1 +1,614 @@
-<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><WsConsultaSaldoResponse xmlns="seirentextil.com.br"><xml><cores><SaldoArtigoCor><Artigo>2103CDB08</Artigo><Divisao>CNX-FT</Divisao><Cor>FT / LAVAR E RAMAR</Cor><Pecas>24</Pecas><Peso>471.400</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2408BCB0</Artigo><Divisao>CNX</Divisao><Cor>SEM COR</Cor><Pecas>6</Pecas><Peso>100.200</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2414BSB01</Artigo><Divisao>CNX</Divisao><Cor>S.15 / ALECRIM CLARO TF F6129</Cor><Pecas>60</Pecas><Peso>959.300</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2470BCB0</Artigo><Divisao>CNX</Divisao><Cor>SEM COR</Cor><Pecas>6</Pecas><Peso>97.700</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2471BCB0</Artigo><Divisao>CXT</Divisao><Cor>SEM COR</Cor><Pecas>1</Pecas><Peso>16.000</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2642BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.47 / AZUL F4522</Cor><Pecas>12</Pecas><Peso>183.550</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2642BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.55 / CINZA F2205</Cor><Pecas>42</Pecas><Peso>647.150</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2642BCB00</Artigo><Divisao>CNX</Divisao><Cor>SEM COR</Cor><Pecas>1</Pecas><Peso>20.300</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.01 / VIBRANT F1861</Cor><Pecas>108</Pecas><Peso>1769.050</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.04 / CHIVA F1240</Cor><Pecas>6</Pecas><Peso>97.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.05 / LARANJA FLUOR F1582</Cor><Pecas>48</Pecas><Peso>788.200</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.08 / BRANCO FIT F1516</Cor><Pecas>42</Pecas><Peso>690.900</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.10 / ROSA NEON F1584</Cor><Pecas>18</Pecas><Peso>298.600</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.100 / VERDE FASCINAÇAO F0711</Cor><Pecas>6</Pecas><Peso>96.000</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.109 / PURPLE HEART F5827</Cor><Pecas>6</Pecas><Peso>96.750</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.11 / PRETO F4293</Cor><Pecas>6</Pecas><Peso>98.850</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.117 / SUPER BLACK F5643</Cor><Pecas>6</Pecas><Peso>99.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.127 / AQUA SKY F5883</Cor><Pecas>12</Pecas><Peso>197.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.13 / MIDNIGHT F0840</Cor><Pecas>27</Pecas><Peso>445.100</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.130 / TILE BLUE F5886</Cor><Pecas>12</Pecas><Peso>197.400</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.14 / MILENIUM F0834</Cor><Pecas>9</Pecas><Peso>147.900</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.17 / MYSTERIOUS F5571</Cor><Pecas>6</Pecas><Peso>97.250</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.174 / LILAS LIGHT F6134</Cor><Pecas>6</Pecas><Peso>99.300</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.175 / GLACE F6137</Cor><Pecas>6</Pecas><Peso>99.500</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.18 / LEG PRESS F1585</Cor><Pecas>6</Pecas><Peso>97.750</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.19 / TOP BLUE F0842</Cor><Pecas>54</Pecas><Peso>891.900</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.27 / LUMICOLOR F1587</Cor><Pecas>6</Pecas><Peso>98.900</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.28 / VERDE AMAZONIA F5031</Cor><Pecas>24</Pecas><Peso>395.100</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.29 / DARK GREEN F1511</Cor><Pecas>6</Pecas><Peso>97.900</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.35 / GRAPE JUICE F1868</Cor><Pecas>12</Pecas><Peso>193.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.43 / VEGAS LI F4700</Cor><Pecas>6</Pecas><Peso>98.000</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.57 / GRAFITE F2200</Cor><Pecas>12</Pecas><Peso>197.600</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.58 / OCEANO F4805</Cor><Pecas>6</Pecas><Peso>96.050</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.63 / CORAL NEON F4722</Cor><Pecas>6</Pecas><Peso>97.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.89 / ROSA ZIG ZAG F4756</Cor><Pecas>6</Pecas><Peso>96.150</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2644BCB0</Artigo><Divisao>CNX</Divisao><Cor>SEM COR</Cor><Pecas>2</Pecas><Peso>34.400</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.11 / PRETO F4293</Cor><Pecas>12</Pecas><Peso>201.400</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.16 / GRIS F0845</Cor><Pecas>24</Pecas><Peso>397.300</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.30 / FRAMBOESA F4598</Cor><Pecas>6</Pecas><Peso>99.300</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.36 / CHIC RED F0806</Cor><Pecas>6</Pecas><Peso>99.000</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.37 / OCEANO F4805</Cor><Pecas>6</Pecas><Peso>99.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.49 / PEACOCK BLUE F4605</Cor><Pecas>12</Pecas><Peso>199.900</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>S.65 / RED PLUM F5825</Cor><Pecas>6</Pecas><Peso>99.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2647BCB0</Artigo><Divisao>CNX</Divisao><Cor>SEM COR</Cor><Pecas>4</Pecas><Peso>66.600</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2675BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.02 / ROSA BEBE F4697</Cor><Pecas>6</Pecas><Peso>99.500</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2675BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.46 / PURPLE HEART F5827</Cor><Pecas>6</Pecas><Peso>95.400</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2675BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.82 / AZUL ACINZENTADO OX F6113</Cor><Pecas>6</Pecas><Peso>99.600</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2675BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.85 / RED CHIC HE F6165</Cor><Pecas>1</Pecas><Peso>16.700</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2719BCB00</Artigo><Divisao>CNX</Divisao><Cor>SEM COR</Cor><Pecas>3</Pecas><Peso>48.600</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.07 / BRANCO FIT F1516</Cor><Pecas>42</Pecas><Peso>679.180</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.08 / PRETO F4293</Cor><Pecas>12</Pecas><Peso>196.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.112 / BRIGHT YELLOW F6039</Cor><Pecas>12</Pecas><Peso>196.000</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.120 / RADIANT YELLOW F6021</Cor><Pecas>6</Pecas><Peso>98.200</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.13 / MIDNIGHT F0840</Cor><Pecas>84</Pecas><Peso>1362.320</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.16 / MILENIUM F0834</Cor><Pecas>12</Pecas><Peso>196.100</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.17 / CINZA F2205</Cor><Pecas>6</Pecas><Peso>98.100</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2729BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.96 / DEWBERRY F6026</Cor><Pecas>6</Pecas><Peso>98.100</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2741BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.01 / BRANCO FIT F1516</Cor><Pecas>120</Pecas><Peso>1851.210</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2741BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.07 / PRETO F4293</Cor><Pecas>1</Pecas><Peso>14.650</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2741BCB01</Artigo><Divisao>CXT</Divisao><Cor>S.01 / BRANCO FIT F1516</Cor><Pecas>24</Pecas><Peso>398.400</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2741BCB01</Artigo><Divisao>CXT</Divisao><Cor>SEM COR</Cor><Pecas>3</Pecas><Peso>46.960</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2772BPD00</Artigo><Divisao>CXT</Divisao><Cor>S.07 / CORAL NEON OX F6118</Cor><Pecas>24</Pecas><Peso>374.740</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2772BPD00</Artigo><Divisao>CXT</Divisao><Cor>SEM COR</Cor><Pecas>10</Pecas><Peso>156.830</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2776BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.09 / GRIS F0845</Cor><Pecas>6</Pecas><Peso>98.200</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2776BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.11 / CINZA F2205</Cor><Pecas>6</Pecas><Peso>97.400</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2776BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.12 / GRAFITE F2200</Cor><Pecas>12</Pecas><Peso>196.000</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2776BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.13 / TOP BLUE F0842</Cor><Pecas>6</Pecas><Peso>98.500</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2778BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.23 / LUMICOLOR F1587</Cor><Pecas>59</Pecas><Peso>940.040</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2778BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.32 / CABERNET F4659</Cor><Pecas>3</Pecas><Peso>49.720</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2778BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.33 / MIAMI F5517</Cor><Pecas>18</Pecas><Peso>288.720</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2778BCB00</Artigo><Divisao>CXT</Divisao><Cor>S.34 / PARACHUTE PURPLE F5828</Cor><Pecas>18</Pecas><Peso>291.760</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2779BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.01 / PRETO F4293</Cor><Pecas>12</Pecas><Peso>197.600</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2779BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.02 / MARINHO SPEED F5932</Cor><Pecas>12</Pecas><Peso>196.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2779BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.03 / BATOM SPEED F5933</Cor><Pecas>6</Pecas><Peso>98.100</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2779BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.04 / BRANCO FIT F1516</Cor><Pecas>12</Pecas><Peso>195.900</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2779BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.06 / CORSAIR F5891</Cor><Pecas>6</Pecas><Peso>99.100</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2779BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.07 / TOP BLUE F0842</Cor><Pecas>6</Pecas><Peso>99.300</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2784BDB00</Artigo><Divisao>CNX</Divisao><Cor>S.16 / AZUL RN F6162</Cor><Pecas>12</Pecas><Peso>198.200</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2784BDB00</Artigo><Divisao>CNX</Divisao><Cor>SEM COR</Cor><Pecas>30</Pecas><Peso>496.600</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2792BCB00</Artigo><Divisao>CXT</Divisao><Cor>SEM COR</Cor><Pecas>2</Pecas><Peso>31.700</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2794BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.03 / PRETO F4293</Cor><Pecas>21</Pecas><Peso>351.800</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2794BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.04 / MIDNIGHT F0840</Cor><Pecas>6</Pecas><Peso>100.550</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2794BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.05 / GRIS F0845</Cor><Pecas>6</Pecas><Peso>100.500</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2794BCB00</Artigo><Divisao>CNX</Divisao><Cor>S.06 / TOP BLUE F0842</Cor><Pecas>6</Pecas><Peso>100.450</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>2795BCB00</Artigo><Divisao>CXT</Divisao><Cor>SEM COR</Cor><Pecas>1</Pecas><Peso>16.500</Peso></SaldoArtigoCor><SaldoArtigoCor><Artigo>7105BCBX0</Artigo><Divisao>CXT</Divisao><Cor>SEM COR</Cor><Pecas>13</Pecas><Peso>218.700</Peso></SaldoArtigoCor></cores></xml></WsConsultaSaldoResponse></soap:Body></soap:Envelope>
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <WsConsultaSaldoResponse xmlns="seirentextil.com.br">
+            <xml>
+                <cores>
+                    <SaldoArtigoCor>
+                        <Artigo>2103CDB08</Artigo>
+                        <Divisao>CNX-FT</Divisao>
+                        <Cor>FT / LAVAR E RAMAR</Cor>
+                        <Pecas>24</Pecas>
+                        <Peso>471.400</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2408BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>100.200</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2414BSB01</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.15 / ALECRIM CLARO TF F6129</Cor>
+                        <Pecas>60</Pecas>
+                        <Peso>959.300</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2470BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>97.700</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2471BCB0</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>1</Pecas>
+                        <Peso>16.000</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2642BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.47 / AZUL F4522</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>183.550</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2642BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.55 / CINZA F2205</Cor>
+                        <Pecas>42</Pecas>
+                        <Peso>647.150</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2642BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>1</Pecas>
+                        <Peso>20.300</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.01 / VIBRANT F1861</Cor>
+                        <Pecas>108</Pecas>
+                        <Peso>1769.050</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.04 / CHIVA F1240</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>97.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.05 / LARANJA FLUOR F1582</Cor>
+                        <Pecas>48</Pecas>
+                        <Peso>788.200</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.08 / BRANCO FIT F1516</Cor>
+                        <Pecas>42</Pecas>
+                        <Peso>690.900</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.10 / ROSA NEON F1584</Cor>
+                        <Pecas>18</Pecas>
+                        <Peso>298.600</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.100 / VERDE FASCINAÇAO F0711</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>96.000</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.109 / PURPLE HEART F5827</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>96.750</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.11 / PRETO F4293</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.850</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.117 / SUPER BLACK F5643</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.127 / AQUA SKY F5883</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>197.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.13 / MIDNIGHT F0840</Cor>
+                        <Pecas>27</Pecas>
+                        <Peso>445.100</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.130 / TILE BLUE F5886</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>197.400</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.14 / MILENIUM F0834</Cor>
+                        <Pecas>9</Pecas>
+                        <Peso>147.900</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.17 / MYSTERIOUS F5571</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>97.250</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.174 / LILAS LIGHT F6134</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.300</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.175 / GLACE F6137</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.500</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.18 / LEG PRESS F1585</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>97.750</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.19 / TOP BLUE F0842</Cor>
+                        <Pecas>54</Pecas>
+                        <Peso>891.900</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.27 / LUMICOLOR F1587</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.900</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.28 / VERDE AMAZONIA F5031</Cor>
+                        <Pecas>24</Pecas>
+                        <Peso>395.100</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.29 / DARK GREEN F1511</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>97.900</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.35 / GRAPE JUICE F1868</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>193.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.43 / VEGAS LI F4700</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.000</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.57 / GRAFITE F2200</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>197.600</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.58 / OCEANO F4805</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>96.050</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.63 / CORAL NEON F4722</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>97.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.89 / ROSA ZIG ZAG F4756</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>96.150</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2644BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>2</Pecas>
+                        <Peso>34.400</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.11 / PRETO F4293</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>201.400</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.16 / GRIS F0845</Cor>
+                        <Pecas>24</Pecas>
+                        <Peso>397.300</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.30 / FRAMBOESA F4598</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.300</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.36 / CHIC RED F0806</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.000</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.37 / OCEANO F4805</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.49 / PEACOCK BLUE F4605</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>199.900</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.65 / RED PLUM F5825</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2647BCB0</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>4</Pecas>
+                        <Peso>66.600</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2675BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.02 / ROSA BEBE F4697</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.500</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2675BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.46 / PURPLE HEART F5827</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>95.400</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2675BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.82 / AZUL ACINZENTADO OX F6113</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.600</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2675BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.85 / RED CHIC HE F6165</Cor>
+                        <Pecas>1</Pecas>
+                        <Peso>16.700</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2719BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>3</Pecas>
+                        <Peso>48.600</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.07 / BRANCO FIT F1516</Cor>
+                        <Pecas>42</Pecas>
+                        <Peso>679.180</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.08 / PRETO F4293</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>196.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.112 / BRIGHT YELLOW F6039</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>196.000</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.120 / RADIANT YELLOW F6021</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.200</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.13 / MIDNIGHT F0840</Cor>
+                        <Pecas>84</Pecas>
+                        <Peso>1362.320</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.16 / MILENIUM F0834</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>196.100</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.17 / CINZA F2205</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.100</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2729BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.96 / DEWBERRY F6026</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.100</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2741BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.01 / BRANCO FIT F1516</Cor>
+                        <Pecas>120</Pecas>
+                        <Peso>1851.210</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2741BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.07 / PRETO F4293</Cor>
+                        <Pecas>1</Pecas>
+                        <Peso>14.650</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2741BCB01</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.01 / BRANCO FIT F1516</Cor>
+                        <Pecas>24</Pecas>
+                        <Peso>398.400</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2741BCB01</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>3</Pecas>
+                        <Peso>46.960</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2772BPD00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.07 / CORAL NEON OX F6118</Cor>
+                        <Pecas>24</Pecas>
+                        <Peso>374.740</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2772BPD00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>10</Pecas>
+                        <Peso>156.830</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2776BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.09 / GRIS F0845</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.200</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2776BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.11 / CINZA F2205</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>97.400</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2776BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.12 / GRAFITE F2200</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>196.000</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2776BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.13 / TOP BLUE F0842</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.500</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2778BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.23 / LUMICOLOR F1587</Cor>
+                        <Pecas>59</Pecas>
+                        <Peso>940.040</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2778BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.32 / CABERNET F4659</Cor>
+                        <Pecas>3</Pecas>
+                        <Peso>49.720</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2778BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.33 / MIAMI F5517</Cor>
+                        <Pecas>18</Pecas>
+                        <Peso>288.720</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2778BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>S.34 / PARACHUTE PURPLE F5828</Cor>
+                        <Pecas>18</Pecas>
+                        <Peso>291.760</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2779BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.01 / PRETO F4293</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>197.600</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2779BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.02 / MARINHO SPEED F5932</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>196.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2779BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.03 / BATOM SPEED F5933</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>98.100</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2779BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.04 / BRANCO FIT F1516</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>195.900</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2779BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.06 / CORSAIR F5891</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.100</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2779BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.07 / TOP BLUE F0842</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>99.300</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2784BDB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.16 / AZUL RN F6162</Cor>
+                        <Pecas>12</Pecas>
+                        <Peso>198.200</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2784BDB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>30</Pecas>
+                        <Peso>496.600</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2792BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>2</Pecas>
+                        <Peso>31.700</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2794BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.03 / PRETO F4293</Cor>
+                        <Pecas>21</Pecas>
+                        <Peso>351.800</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2794BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.04 / MIDNIGHT F0840</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>100.550</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2794BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.05 / GRIS F0845</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>100.500</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2794BCB00</Artigo>
+                        <Divisao>CNX</Divisao>
+                        <Cor>S.06 / TOP BLUE F0842</Cor>
+                        <Pecas>6</Pecas>
+                        <Peso>100.450</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>2795BCB00</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>1</Pecas>
+                        <Peso>16.500</Peso>
+                    </SaldoArtigoCor>
+                    <SaldoArtigoCor>
+                        <Artigo>7105BCBX0</Artigo>
+                        <Divisao>CXT</Divisao>
+                        <Cor>SEM COR</Cor>
+                        <Pecas>13</Pecas>
+                        <Peso>218.700</Peso>
+                    </SaldoArtigoCor>
+                </cores>
+            </xml>
+        </WsConsultaSaldoResponse>
+    </soap:Body>
+</soap:Envelope>
