@@ -87,4 +87,21 @@ class Tools
         $this->lastRequest = $msg;
         return $this->soap->send($msg, $operation);
     }
+
+    /**
+     * Envia lote em formato xml base64
+     * @param string $xmlb64
+     * @return string
+     * @throws \Exception
+     */
+    public function enviaLoteXml(string $xmlb64)
+    {
+        $operation = "WsCadastraLote";
+        $msg = "<{$operation} xmlns=\"{$this->ns}\">"
+            . "<CNPJ>{$this->config->cnpj}</CNPJ>"
+            . "<arquivoByte>{$xmlb64}</arquivoByte>"
+            . "</{$operation}>";
+        $this->lastRequest = $msg;
+        return $this->soap->send($msg, $operation);
+    }
 }

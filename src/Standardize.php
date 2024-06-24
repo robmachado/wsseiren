@@ -33,16 +33,17 @@ class Standardize
      * @var array
      */
     protected $errors;
+    /**
+     * @var array
+     */
+    protected $xmlerrors;
 
     /**
      * Construtor
      */
     public function __construct()
     {
-        $this->errors = json_decode(
-            file_get_contents(__DIR__ . '/../storage/errors.json'),
-            true
-        );
+        $this->errors = json_decode(file_get_contents(__DIR__ . '/../storage/errors.json'), true);
     }
 
     /**
@@ -135,7 +136,7 @@ class Standardize
         $resp = [];
         if (is_array($std->Retorno)) {
             foreach ($std->Retorno as $ret) {
-                $code = $ret->Codigo;
+                $code = (int) $ret->Codigo;
                 if ($code > 999) {
                     //houve algum erro
                     $resp[] = (object) [
@@ -145,12 +146,13 @@ class Standardize
                 }
             }
         } else {
-            $code = $std->Retorno->Codigo;
+            $code = (int) $std->Retorno->Codigo;
+            $desc = $this->errors[$code];
             if ($code > 999) {
                 //houve algum erro
                 $resp[] = (object) [
                     'erro' => $code,
-                    'desc' => $this->errors[$code],
+                    'desc' => $desc,
                 ];
             } else {
                 $resp[] = (object) [
@@ -172,7 +174,7 @@ class Standardize
     public function whichIs($xml)
     {
         if (!$this->isXML($xml)) {
-            throw new InvalidArgumentException(
+            throw new \InvalidArgumentException(
                 "O argumento passado não é um XML válido."
             );
         }
@@ -215,8 +217,8 @@ class Standardize
         libxml_use_internal_errors(true);
         libxml_clear_errors();
         simplexml_load_string($content);
-        $this->errors = libxml_get_errors();
+        $this->xmlerrors = libxml_get_errors();
         libxml_clear_errors();
-        return empty($this->errors);
+        return empty($this->xmlerrors);
     }
 }

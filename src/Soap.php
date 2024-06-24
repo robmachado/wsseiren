@@ -2,6 +2,8 @@
 
 namespace Fimatec\Seiren;
 
+use Fimatec\Seiren\Exceptions\SoapException;
+
 class Soap
 {
     /**
@@ -28,6 +30,10 @@ class Soap
      * @var string
      */
     protected $soaperror;
+    /**
+     * @var int
+     */
+    protected $soaperror_code;
     /**
      * @var array
      */
@@ -92,6 +98,7 @@ class Soap
             curl_setopt($oCurl, CURLOPT_HTTPHEADER, $parameters);
             $response = curl_exec($oCurl);
             $this->soaperror = curl_error($oCurl);
+            $this->soaperror_code = curl_errno($oCurl);
             $ainfo = curl_getinfo($oCurl);
             if (is_array($ainfo)) {
                 $this->soapinfo = $ainfo;
@@ -102,13 +109,14 @@ class Soap
             $this->responseHead = trim(substr($response, 0, $headsize));
             $this->responseBody = trim(substr($response, $headsize));
         } catch (\Exception $e) {
-            throw new \Exception($e->getMessage());
+            throw new SoapException($e->getMessage());
         }
         if ($this->soaperror != '') {
-            throw new \Exception($this->soaperror);
+            throw new SoapException($this->soaperror, $this->soaperror_code);
         }
         if ($httpcode != 200) {
-            throw new \Exception("HTTP Error code: $httpcode - " . $this->getFaultString($this->responseBody));
+            throw new SoapException("HTTP Error code: $httpcode - "
+                . $this->getFaultString($this->responseBody), $httpcode);
         }
         return $this->responseBody;
     }

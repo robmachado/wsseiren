@@ -1,9 +1,9 @@
 {
     "1000": "Xml Inv&aacute;lido",
     "1001": "Lote Inv&aacute;lido",
-    "1002": "Sem Tag &lt;ID_Token&gt;",
-    "1003": "Tag &lt;ID_Token&gt; nula ou em branco",
-    "1004": "Tag &lt;ID_Token&gt; inv&aacute;lida",
+    "1002": "Sem Token;",
+    "1003": "Token nulo ou em branco",
+    "1004": "Token inv&aacute;lido",
     "1005": "Sem Tag &lt;NR_Nota_Fiscal&gt;",
     "1006": "Tag &lt;NR_Nota_Fiscal&gt; nula ou em branco",
     "1007": "Tag &lt;NR_Nota_Fiscal&gt; maior que 9 d&iacute;gitos",
