@@ -38,6 +38,8 @@ class Soap
      * @var array
      */
     protected $soapinfo;
+    protected $responseHead;
+    protected $responseBody;
 
     /**
      * Construtor

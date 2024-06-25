@@ -10,6 +10,7 @@ class Tools
     protected $soap;
     protected $ns = 'seirentextil.com.br';
     public $lastRequest;
+    public $url;
 
     /**
      * Construtor
