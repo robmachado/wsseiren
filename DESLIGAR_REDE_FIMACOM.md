@@ -2,9 +2,12 @@
 
 ## 1. Desligar NAS
 
-> IP: 192.168.0.9:8000\
-> user: admin\
-> password: monitor5\ 
+> IP: 192.168.0.9:8000
+
+> user: admin
+
+> password: monitor5 
+
 > No menu superior direito "A" dentro de um circulo, cliquen em desligar
 
 ## 2. Desligar servidor VMWare com o server virtual w2k (base de dados legado)
